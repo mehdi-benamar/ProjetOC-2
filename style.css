@@ -1,0 +1,60 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: Raleway, sans-serif;
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px;
+}
+
+.logo{
+    width: 120px;
+}
+
+/* nav du header */
+.header-nav{
+    width: 250px;
+}
+.header-nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav li{
+    width: 110px;
+    list-style: none; 
+}
+
+
+.header a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    width: inherit;
+    
+}
+
+.header a:before{
+    content: "";
+    width: inherit;
+    position: absolute;
+    top: 0
+}
+
+.header a:hover:before{
+    border-top: 1.5px solid #0065FC;
+}
+
+.header a:hover{
+    color:#0065FC;
+    font-weight: 500;
+    
+}

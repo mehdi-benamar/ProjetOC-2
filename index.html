@@ -4,34 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="normalize.css"> -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <title>Booki</title>
 </head>
 <body>
     <header class="header">
-        <img src="./images/logo/Booki.png" alt="">
-       <nav>
+        <img src="./images/logo/Booki.png" alt="" class="logo">
+       <nav class="header-nav">
            <ul>
-               <li>Hébergements</li>
-               <li>Activités</li>
+               <li><a href="#hebergements">Hébergements</a></li>
+               <li><a href="#activites">Activités</a></li>
            </ul>
        </nav>
     </header>
     <main class="main">
-        <section>
+        <section class="section-un">
             <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
             <p>En plein centre-ville ou en pleine nature</p>
             <form class="search">
-                <i class="fa fa-map-marker"></i>
+                <i class="fa fa-map-marker-alt"></i>
                 <input type="text" value="Marseille, France">
-                <p>Rechercher</p>
+                <button>Recherche</button>
             </form>
+            <div class="filtre">
+                <p>Filtres</p>
+                <div class="economique">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <p>Économique</p>
+                </div>
+                <div class="Familial">
+                    <i class="fa-solid fa-child-reaching"></i>
+                    <p>Familial</p>
+                </div>
+                <div class="Romantique">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Romantique</p>
+                </div>
+                <div class="Anmiaux autorisés">
+                    <i class="fa-solid fa-dog"></i>
+                    <p>Animaux autorisés</p>
+                </div>
+            </div>
         </section>
     </main>
 </body>
