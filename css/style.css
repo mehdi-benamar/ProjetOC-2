@@ -179,4 +179,80 @@
 
 .location {
     font-size: 11px;
+    background-color: var(--gris-clair);
+    border-radius: 15px;
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.location h2{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.location--liste{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px 15px 15px;
+}
+.location--liste article{
+    width: 30%;
+    height: 170px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.location--titre{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.location--liste img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;       
+}
+
+.location--liste article img,
+.location--liste article p,
+.location--liste article .location--etoile{
+    margin-bottom: 5px;
+}
+
+
+.location--etoile{
+    display: flex;
+}
+.location--etoile i{
+    font-size: 8px;
+}
+.location--etoile i:nth-child(1),
+.location--etoile i:nth-child(2),
+.location--etoile i:nth-child(3){
+    color: var(--bleu-fonce)
+}
+
+.toute--etoile i{
+    color: var(--bleu-fonce)
+}
+.quatre--etoile i:not(:last-child){
+    color: var(--bleu-fonce)
+}
+
+.location p:last-child{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
