@@ -14,42 +14,49 @@
     <title>Booki</title>
 </head>
 <body>
+    <!-- header -->
     <header class="header">
-        <img src="./images/logo/Booki.png" alt="" class="logo">
-       <nav class="header-nav">
+        <img src="./images/logo/Booki.png" alt="" class="header--logo">
+       <nav class="header--nav">
            <ul>
                <li><a href="#hebergements">Hébergements</a></li>
                <li><a href="#activites">Activités</a></li>
            </ul>
        </nav>
     </header>
-    <main class="main">
-        <section class="section-un">
-            <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <form class="search">
-                <i class="fa fa-map-marker-alt"></i>
-                <input type="text" value="Marseille, France">
-                <button>Recherche</button>
+    <!-- main -->
+    <main class="menu">
+        <!-- première section de main -->
+        <section class="menu--section1">
+            <h2 class="menu--margin--bottom">Trouvez votre hébergement pour des vacances de rêves</h2>
+            <p class="menu--margin--bottom">En plein centre-ville ou en pleine nature</p>
+            <form class="menu--search menu--margin--bottom">
+                <i class="fa fa-map-marker-alt menu--marker"></i>
+                <input type="text" value="Marseille, France" class="menu--input">
+                <button class="menu--btn" disabled>Rechercher</button>
             </form>
-            <div class="filtre">
+            <div class="menu--filtre menu--margin--bottom">
                 <p>Filtres</p>
-                <div class="economique">
+                <div class="menu--filtre--catgorie">
                     <i class="fa-solid fa-money-bill-wave"></i>
-                    <p>Économique</p>
+                    <p class="menu--filtre--radius">Économique</p>
                 </div>
-                <div class="Familial">
+                <div class="menu--filtre--catgorie">
                     <i class="fa-solid fa-child-reaching"></i>
-                    <p>Familial</p>
+                    <p class="menu--filtre--radius">Familial</p>
                 </div>
-                <div class="Romantique">
+                <div class="menu--filtre--catgorie">
                     <i class="fa-solid fa-heart"></i>
-                    <p>Romantique</p>
+                    <p class="menu--filtre--radius">Romantique</p>
                 </div>
-                <div class="Anmiaux autorisés">
+                <div class="menu--filtre--catgorie">
                     <i class="fa-solid fa-dog"></i>
-                    <p>Animaux autorisés</p>
+                    <p class="menu--filtre--radius">Animaux autorisés</p>
                 </div>
+            </div>
+            <div class="menu--information menu--margin--bottom">
+                <i class="fa-solid fa-info-circle"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
     </main>

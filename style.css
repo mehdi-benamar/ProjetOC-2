@@ -15,21 +15,21 @@
     margin: 20px 30px;
 }
 
-.logo{
+.header--logo{
     width: 120px;
 }
 
 /* nav du header */
-.header-nav{
-    width: 250px;
+.header--nav{
+    width: 270px;
 }
-.header-nav ul{
+.header--nav ul{
     display: flex;
     justify-content: space-between;
 }
 
-.header-nav li{
-    width: 110px;
+.header--nav li{
+    width: 115px;
     list-style: none; 
 }
 
@@ -39,6 +39,7 @@
     color: black;
     font-weight: 500;
     width: inherit;
+    font-size: 13px;
     
 }
 
@@ -57,4 +58,93 @@
     color:#0065FC;
     font-weight: 500;
     
+}
+
+/* main */
+
+.menu{
+    margin: 20px 30px;
+}
+
+.menu .menu--section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 11px;
+}
+/* formulaire */
+.menu--section1 .menu--search{
+    display: flex;
+}
+
+.menu--section1 .menu--marker{
+    width: 20px;
+    border: solid transparent 2px;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+    padding: 10px 20px 10px 10px;
+    background-color: #F2F2F2;
+}
+
+.menu--section1 .menu--input{
+    outline: none;
+    border: none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+    padding: 0 0 0 10px;
+    font-weight: 700;
+}
+
+.menu--section1 .menu--btn{
+    color: white;
+    background-color: #0065FC;
+    padding: 10px 20px 10px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 650;
+    border:none
+}
+
+.menu--section1 .menu--filtre{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.menu--filtre > p{
+    width: 10%;
+    font-weight: 600;
+}
+
+.menu--section1 .menu--filtre--catgorie{
+    display: flex;
+    width:20%;
+}
+
+.menu--filtre--catgorie i{
+    border: solid 1px #DEEBFF;
+    border-radius: 50%;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    left: 6px;
+}
+.menu--filtre--catgorie p{   
+    padding: 5px 10px 5px 10px;
+    font-weight: 600;
+}
+
+.menu--filtre--radius{
+    border-top: solid 1px #DEEBFF;
+    border-bottom: solid 1px #DEEBFF;
+    border-right: solid 1px #DEEBFF;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu--margin--bottom{
+    margin-bottom: 20px;;
 }
