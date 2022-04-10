@@ -213,6 +213,11 @@
     flex-direction: column;
 }
 
+article a{
+    text-decoration: none;
+    color: black
+}
+
 .location--titre{
     font-weight: bold;
     font-size: 12px;
