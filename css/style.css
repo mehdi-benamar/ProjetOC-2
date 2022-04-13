@@ -53,7 +53,7 @@
 /* main */
 
 .menu{
-    margin: 20px 30px;
+    margin: 50px 30px;
 }
 
 
@@ -100,35 +100,37 @@
 .menu--section1 .menu--filtre{
     display: flex;
     align-items: center;
-    width: 65%;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .menu--filtre > p{
     font-weight: 600;
 }
 
-.menu--filtre--catgorie{
+.menu--filtre--categorie{
     display: flex;
     align-items: center;
 }
 
 
-.menu--filtre > p, .menu--filtre--catgorie:not(:last-child){
-    margin-right: 90px;
-}
-
-.menu--filtre--catgorie i{
+.menu--filtre--categorie i{
     border: solid 1px var(--bleu-clair);
     border-radius: 50%;
     color: var(--bleu-fonce);
     background-color: var(--bleu-clair);
     padding: 7px;
     position: relative;
-    left: 6px;
+    left: 7px;
 }
-.menu--filtre--catgorie p{   
+.menu--filtre--categorie p{   
     padding: 5px 15px;
     font-weight: 600;
+}
+.menu--filtre--categorie p:hover{   
+    color: var(--bleu-clair);
+    background-color: var(--bleu-fonce);
+    cursor: pointer;
 }
 
 .menu--filtre--radius{
@@ -181,6 +183,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: baseline;
+    padding: 0 40px 15px 40px;
 }
 
 .location h2{
@@ -194,7 +197,6 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding: 0 15px 15px 15px;
 }
 .location--liste article{
     width: 30%;
@@ -246,6 +248,10 @@
 .location--etoile i:nth-child(2),
 .location--etoile i:nth-child(3){
     color: var(--bleu-fonce)
+}
+.location--etoile i:nth-child(4),
+.location--etoile i:nth-child(5){
+    color: var(--gris-clair);
 }
 
 .toute--etoile i{
@@ -307,12 +313,14 @@
 .location--image-pop{
     width: 100%;
     height: 100%;
+    
 }
 .location--image-pop img{
-    width: 200px;
+    width: 100%;
     height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    object-fit: cover;
 
 }
 .location--description--pop{
@@ -389,4 +397,33 @@
 
 .image--port, .image--calanques{
     height: 550px;  
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--gris-clair);
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+}
+
+
+.footer div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h3{
+    margin-bottom: 20px;
+}
+
+.footer--nav ul{
+    list-style: none;
+}
+
+.footer--liste{
+    margin-bottom: 9px;
+    letter-spacing: 1px;
 }
