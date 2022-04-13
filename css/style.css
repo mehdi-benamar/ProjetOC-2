@@ -338,3 +338,55 @@
     margin-left: 10px;
 }
 
+/* activité à marseille */
+
+.activite-marseille{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.activite--groupe{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    
+}
+
+.activite--groupe p{
+    padding: 15px 0 15px 15px;
+    font-weight: 600;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 2px 0 rgb(0,0,0,0.4);
+}
+.activite--ville{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-right: 20px;
+}
+
+
+.activite--ville--deux{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    margin-right: 20px;
+}
+.activite--ville--deux  img{
+    height: 210px;
+}
+
+
+.activite-marseille img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.image--port, .image--calanques{
+    height: 550px;  
+}
