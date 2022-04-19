@@ -242,7 +242,7 @@
 
 .location--liste img {
 	width: 100%;
-	height: 100px;
+	height: 180px;
 	object-fit: cover;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -405,6 +405,9 @@
 	flex-direction: column;
 	justify-content: space-between;
 	width: 25%;
+}
+
+.activite--groupe > div:nth-child(2){
 	margin-right: 20px;
 }
 
@@ -526,6 +529,7 @@
 	.activite--ville,
 	.activite--ville--deux div {
 		margin-bottom: 50px;
+		margin-right: 0;
 	}
 
 	div.activite--longchamp {
@@ -602,7 +606,7 @@
 		border: none;
 		cursor: pointer;
 		position: relative;
-		left: -10px;
+		left: -15px;
 		width: 50px;
 	}
 
@@ -629,9 +633,13 @@
 		align-items: center;
 	}
 	.location--liste article{
-		width: 95%;
+		width: 90%;
 		height: 210px;
 		box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	}
+
+	.location--liste article img{
+		height: 110px;
 	}
 
 	/* activités marseille */
@@ -644,6 +652,10 @@
 	}
 	.activite--ville--deux div{
 		height: 200px;
+	}
+
+	.activite--groupe > div:nth-child(2){
+		margin-right: 0;
 	}
 
 	.activite--ville img, .activite--ville--deux img{
