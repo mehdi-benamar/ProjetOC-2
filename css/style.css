@@ -182,7 +182,7 @@
 /* section 2 dédié aux hébérgements */
 .section--principal {
 	display: flex;
-	justify-content: space-between;
+	gap: 20px;
 }
 
 .section--commune {
@@ -192,7 +192,7 @@
 }
 
 .location {
-	width: 60%;
+	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
@@ -295,6 +295,7 @@
 
 .location--populaire {
 	width: 30%;
+	min-width: 300px;
 	height: auto;
 	display: flex;
 	flex-direction: column;
@@ -500,10 +501,16 @@
 
 	.location--titre--logo {
 		margin: 20px 0 20px 0;
+		justify-content: space-between;
+		padding: 0 25px 0 25px;
+	}
+
+	.location h2{
+		margin-left: 0;
 	}
 
 	.location--liste--pop article {
-		width: 70%
+		width: 95%
 	}
 
 	/* activités à Marseille*/
@@ -525,10 +532,14 @@
 		flex-direction: column;
 		width: 100%;
 	}
-
+	
 	.activite--ville,
 	.activite--ville--deux div {
 		margin-bottom: 50px;
+		margin-right: 0;
+	}
+
+	.activite--groupe > div:nth-child(2){
 		margin-right: 0;
 	}
 
@@ -628,12 +639,17 @@
 		padding: 0
 	}
 
+	.location h2{
+		margin-left: 0;
+		width: 100%;
+	}
+
 	.location--liste{
 		flex-direction: column;
 		align-items: center;
 	}
 	.location--liste article{
-		width: 90%;
+		width: 100%;
 		height: 210px;
 		box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 	}
@@ -642,10 +658,19 @@
 		height: 110px;
 	}
 
+	.location--titre--logo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 15px 0 15px 0;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 	/* activités marseille */
 
 	.activite--ville, .activite--ville--deux{
-		width: 90%;
+		width: 100%;
 	}
 	.activite--ville{
 		height: 200px;
