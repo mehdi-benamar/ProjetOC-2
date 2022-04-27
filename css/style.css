@@ -242,7 +242,7 @@
 
 .location--liste img {
 	width: 100%;
-	height: 180px;
+	height: 168px;
 	object-fit: cover;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -575,18 +575,18 @@
 	}
 
 	.header--nav li{
-		width: 220px;
+		padding: 0 21% 3% 21%;
+		border-bottom: transparent 4px solid;
 	}
 
 	.header--nav a {
 		text-decoration: none;
 		color: black;
-		padding-right: 65px;
-		padding-left: 65px;
-		padding-bottom: 5px;
+		padding: 0;
+		border: none;
 	}
 
-	.header--nav li:hover a{
+	.header--nav li:hover{
 		border-bottom: solid 4px var(--bleu-fonce);
 	}
 	
@@ -621,11 +621,24 @@
 		width: 50px;
 	}
 
+	.menu{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.menu--section1{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 	.menu--section1 .menu--marker {
 		padding: 15px 25px 15px 15px;
 	}
 
 		/* location populaire */
+	.location--populaire{
+		border-radius: 0;
+	}
 	.location--liste--pop article{
 		width: 95%;
 	}
@@ -636,8 +649,8 @@
 	}
 
 	.location{
-		padding: 0
-	}
+		padding: 0 20px 0 20px;
+ 	}
 
 	.location h2{
 		margin-left: 0;
@@ -669,6 +682,10 @@
 
 	/* activités marseille */
 
+	.activite-marseille{
+		padding: 0 20px 0 20px;
+	}
+
 	.activite--ville, .activite--ville--deux{
 		width: 100%;
 	}
@@ -691,6 +708,10 @@
 	.footer{
 		flex-direction: column;
 		align-items: flex-start;
+	}
+
+	.foote--aPropos{
+		width: inherit;
 	}
 	.footer div{
 		margin-bottom: 10px;
